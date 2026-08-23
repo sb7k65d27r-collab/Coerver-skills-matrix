@@ -6,9 +6,36 @@
 
 @media(min-width:600px){.teamGrid{grid-template-columns:1fr 1fr}}
 
-/* MATCH CENTRE — 90s Teletext / Vidiprinter */
-.teletext{font-family:"Courier New",Courier,monospace;background:#000;color:#fff;border:3px solid #1c4cff;padding:12px;min-height:520px;text-transform:uppercase;letter-spacing:.4px}.ttHead{background:#164cff;color:#fff;padding:8px 10px;font-weight:900;display:flex;justify-content:space-between}.ttSub{color:#00ffff;text-align:center;font-weight:900;padding:12px 4px}.seasonGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:28px 4px}.seasonTile{font:inherit;background:#000;color:#ffff00;border:3px solid #ffff00;padding:28px 8px;font-size:22px;font-weight:900}.seasonTile:active{background:#ffff00;color:#000}.ttNav{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0}.ttBtn{font:inherit;border:0;background:#00ffff;color:#000;padding:8px 10px;font-weight:900}.ttBtn.yellow{background:#ffff00}.ttBtn.green{background:#00ff00}.ttBtn.red{background:#ff2020;color:#fff}.ttResult{border-bottom:2px solid #164cff;padding:11px 4px}.ttResultTop{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;font-weight:900}.ttScore{color:#ffff00;font-size:18px}.ttMeta{color:#00ffff;font-size:11px;margin-top:3px}.ttDetails{display:none;padding:9px 6px 3px;color:#fff}.ttResult.open .ttDetails{display:block}.ttLabel{color:#00ff00;font-weight:900}.ttTable{width:100%;font-family:inherit}.ttTable th{color:#00ffff;border-color:#164cff}.ttTable td{border-color:#164cff}.ttTable tr:first-child td{color:#ffff00}.ttRecord{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:12px 0}.ttRecord div{text-align:center;border:2px solid #164cff;padding:9px}.ttRecord b{display:block;color:#ffff00;font-size:20px}.ttBack{font:inherit;background:#164cff;color:#fff;border:0;padding:8px 10px;font-weight:900}.ttAdd{margin-top:16px;border-top:3px solid #164cff;padding-top:12px}.ttForm{display:grid;gap:8px}.ttForm input,.ttForm select,.ttForm textarea{font:inherit;border-radius:0;border:2px solid #00ffff;background:#000;color:#fff;padding:9px;width:100%;text-transform:none}.ttForm textarea{min-height:70px}.ttHint{font-size:11px;color:#aaa;text-transform:none}.ttStatus{color:#00ff00;font-weight:900;margin-top:8px}.ttError{color:#ff4040}.ttPager{color:#ffff00;text-align:right;font-size:11px;margin-top:10px}
-</style></head><body><header><div class="ball">⚽</div><div class="club">NEWCASTLE WANDERERS BLACK</div><div class="title">COERVER SKILLS MATRIX</div></header><main><div class="tabs"><button id="pb" class="on">⚽ PLAYER PROGRESS</button><button id="tb">🏆 TEAM PROGRESS</button><button id="mb">📺 MATCH CENTRE</button></div><section id="player"><div class="card"><b style="color:#ffd400">SELECT PLAYER</b><select id="sel"></select><div style="display:flex;justify-content:space-between;margin-top:15px"><span>Overall progress</span><b id="pct" style="color:#ffd400">0%</b></div><div class="meter"><div id="bar" class="bar"></div></div><div id="playerStats"></div></div><div id="challenge" class="card challenge"></div><div id="skills"></div></section><section id="team" style="display:none"><div id="teamScore" class="card teamScore"></div><div class="card"><div class="category">🏆 TEAM PROGRESS</div><div id="teamdata"></div></div></section><section id="match" style="display:none"><div id="matchCentre" class="teletext"></div></section></main>
+/* MATCH CENTRE — main black / yellow club theme */
+.matchCentre{background:transparent;color:#fff}
+.mcHero{background:linear-gradient(180deg,#1a1a1a,#111);border:2px solid #ffd400;border-radius:18px;padding:18px;margin-bottom:14px;box-shadow:0 12px 30px rgba(0,0,0,.28)}
+.mcEyebrow{color:#ffd400;font-weight:900;font-size:12px;letter-spacing:1.2px;text-transform:uppercase}
+.mcTitle{font-size:25px;font-weight:950;margin-top:4px}
+.mcSub{color:#bdbdbd;font-size:13px;margin-top:4px}
+.seasonGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.seasonTile{background:#151515;color:#fff;border:1px solid #3b3b3b;border-radius:16px;padding:22px 12px;text-align:left;box-shadow:0 10px 24px rgba(0,0,0,.18)}
+.seasonTile strong{display:block;color:#ffd400;font-size:24px}
+.seasonTile span{display:block;color:#aaa;font-size:12px;margin-top:4px}
+.seasonTile:active{transform:scale(.99);border-color:#ffd400}
+.mcTopbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
+.mcBack,.mcAddBtn,.mcSave{border:0;border-radius:12px;padding:10px 13px;font-weight:900}
+.mcBack{background:#202020;color:#fff;border:1px solid #3b3b3b}.mcAddBtn,.mcSave{background:#ffd400;color:#111}
+.mcSeasonTitle{font-size:22px;font-weight:950}.mcSeasonTitle span{color:#ffd400}
+.mcRecord{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0 16px}
+.mcRecord div{background:#151515;border:1px solid #333;border-radius:14px;text-align:center;padding:13px 8px}
+.mcRecord b{display:block;color:#ffd400;font-size:25px}.mcRecord span{font-size:11px;color:#aaa;font-weight:800}
+.mcSection{background:#151515;border:1px solid #2f2f2f;border-radius:16px;margin:12px 0;overflow:hidden}
+.mcSectionHead{padding:13px 15px;background:#ffd400;color:#111;font-weight:950}
+.mcResult{padding:13px 14px;border-bottom:1px solid #2c2c2c}.mcResult:last-child{border-bottom:0}
+.mcResultTop{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.mcOpponent{font-weight:900}.mcScore{font-size:21px;font-weight:950;color:#ffd400}
+.mcMeta{font-size:11px;color:#9f9f9f;margin-top:4px}.mcDetails{display:none;margin-top:10px;padding-top:10px;border-top:1px solid #303030;color:#ddd;font-size:13px;line-height:1.5}.mcResult.open .mcDetails{display:block}
+.mcDetails b{color:#ffd400}.mcNotes{margin-top:6px;color:#aaa}
+.mcTable{width:100%;border-collapse:collapse}.mcTable th,.mcTable td{padding:10px 12px;border-bottom:1px solid #2c2c2c;text-align:left}.mcTable th{font-size:11px;color:#aaa;text-transform:uppercase}.mcTable td:last-child,.mcTable th:last-child{text-align:right}.mcTable tr:last-child td{border-bottom:0}.mcRank{color:#ffd400;font-weight:900}
+.mcEmpty{padding:18px;color:#aaa;text-align:center}
+.mcFormWrap{padding:14px}.mcForm{display:grid;gap:9px}.mcForm input,.mcForm select,.mcForm textarea{width:100%;padding:11px 12px;border-radius:11px;border:1px solid #3a3a3a;background:#0f0f0f;color:#fff;font:inherit}.mcForm textarea{min-height:72px}.mcFormRow{display:grid;grid-template-columns:1fr 1fr;gap:9px}.mcHint{font-size:11px;color:#8c8c8c}.mcStatus{font-weight:850;color:#9ee493}.mcError{font-weight:850;color:#ff7676}
+@media(max-width:520px){.seasonGrid{grid-template-columns:1fr}.mcHero{padding:15px}.mcRecord{gap:7px}.mcRecord b{font-size:22px}}
+</style></head><body><header><div class="ball">⚽</div><div class="club">NEWCASTLE WANDERERS BLACK</div><div class="title">COERVER SKILLS MATRIX</div></header><main><div class="tabs"><button id="pb" class="on">⚽ PLAYER PROGRESS</button><button id="tb">🏆 TEAM PROGRESS</button><button id="mb">📺 MATCH CENTRE</button></div><section id="player"><div class="card"><b style="color:#ffd400">SELECT PLAYER</b><select id="sel"></select><div style="display:flex;justify-content:space-between;margin-top:15px"><span>Overall progress</span><b id="pct" style="color:#ffd400">0%</b></div><div class="meter"><div id="bar" class="bar"></div></div><div id="playerStats"></div></div><div id="challenge" class="card challenge"></div><div id="skills"></div></section><section id="team" style="display:none"><div id="teamScore" class="card teamScore"></div><div class="card"><div class="category">🏆 TEAM PROGRESS</div><div id="teamdata"></div></div></section><section id="match" style="display:none"><div id="matchCentre" class="matchCentre"></div></section></main>
 <div id="pcModal" class="pcModal"><div class="pcShell"><button id="pcCloseX" class="pcX" aria-label="Close">×</button><div id="playerCardFull" class="playerCard tier-bronze"></div><button id="pcClose" class="pcClose">CLOSE PLAYER CARD</button></div></div>
 <div id="talkModal" class="modal"><div class="talk"><div class="icon">⚽</div><h2>TODAY'S TEAM TALK</h2><div id="talkPlayer" class="playerTalk"></div><div id="talkMessage" class="message"></div><div class="small">A new football message every day.</div><button id="talkClose">LET'S GO ⚽</button></div></div>
 <script>
@@ -61,24 +88,70 @@ function render(){let p=sel.value;if(!p)return;let t=total(p),max=S.length*200;p
 async function save(p,s,v){let old=rep(p,s);R[k(p,s)]=v;render();let r=await fetch(API+'?api=save',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({player_id:+p,skill_id:+s,reps:v})});if(!r.ok){R[k(p,s)]=old;render();alert('Save failed')}}
 function renderTeam(){let teamTotal=P.reduce((a,p)=>a+total(p.id),0),teamMastered=P.reduce((a,p)=>a+mastered(p.id),0),repTarget=P.length*S.length*200,masterTarget=P.length*S.length,repPct=repTarget?Math.round(teamTotal/repTarget*100):0,masterPct=masterTarget?Math.round(teamMastered/masterTarget*100):0,teamPct=repTarget?Math.round(teamTotal/repTarget*100):0;teamScore.innerHTML='<div class="teamTitle">⚽ NEWCASTLE WANDERERS BLACK TEAM SCORE</div><div class="teamGrid"><div class="teamMetric"><div class="teamMetricTop"><div><div class="big">'+teamTotal.toLocaleString()+'</div><div>Team Reps</div></div><div class="target">Target<br><b>'+repTarget.toLocaleString()+'</b></div></div><div class="meter"><div class="bar" style="width:'+Math.min(100,repPct)+'%"></div></div><div class="meta">'+teamTotal.toLocaleString()+' / '+repTarget.toLocaleString()+' reps</div></div><div class="teamMetric"><div class="teamMetricTop"><div><div class="big">'+teamMastered+'</div><div>Skills Mastered</div></div><div class="target">Target<br><b>'+masterTarget+'</b></div></div><div class="meter"><div class="bar" style="width:'+Math.min(100,masterPct)+'%"></div></div><div class="meta">'+teamMastered+' / '+masterTarget+' skills mastered</div></div></div><div class="teamPct">📈 Team Completion: '+teamPct+'%</div>';let a=P.map(p=>({name:p.name,id:p.id,total:total(p.id),pct:Math.round(total(p.id)/(S.length*200)*100),done:challengeDone(p.id)})).sort((a,b)=>b.total-a.total || b.pct-a.pct || a.name.localeCompare(b.name)),h='<table><tr><th>#</th><th>Player</th><th>Weekly Challenge</th><th>Progress</th><th>Reps</th></tr>';a.forEach((x,i)=>h+='<tr><td class="rank">'+(i+1)+'</td><td><b>'+x.name+'</b></td><td class="trophy">'+(x.done?'🏆':'—')+'</td><td>'+x.pct+'%</td><td>'+x.total+'</td></tr>');teamdata.innerHTML=h+'</table>'}
 
-let MATCHES=[],MATCH_SEASON=null;
+let MATCHES=[],MATCH_BASELINES=[],MATCH_EVENTS=[],MATCH_SEASON=null;
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-async function loadMatches(){try{const d=await fetch(API+'?api=matches').then(r=>r.json());MATCHES=d.matches||[]}catch(e){MATCHES=[]}renderMatchCentre()}
-function seasonMatches(season){return MATCHES.filter(m=>m.season===season).sort((a,b)=>String(b.match_date||'').localeCompare(String(a.match_date||''))||b.id-a.id)}
-function eventTotals(ms,type){const out={};ms.forEach(m=>(m.match_events||[]).filter(e=>e.event_type===type).forEach(e=>out[e.player_name]=(out[e.player_name]||0)+(+e.quantity||1)));return Object.entries(out).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]))}
+async function loadMatches(){
+  try{
+    const r=await fetch(API+'?api=matches');
+    if(!r.ok) throw new Error('match feed failed');
+    const d=await r.json();
+    MATCHES=d.matches||[];
+    MATCH_BASELINES=d.baselines||[];
+    MATCH_EVENTS=d.events||[];
+  }catch(e){
+    console.error(e);
+    MATCHES=[];MATCH_BASELINES=[];MATCH_EVENTS=[];
+  }
+  renderMatchCentre()
+}
+function seasonId(label){return label==='2025/26'?'25-26':'26-27'}
+function seasonMatches(label){const sid=seasonId(label);return MATCHES.filter(m=>m.season_id===sid).sort((a,b)=>String(b.match_date||'').localeCompare(String(a.match_date||''))||b.id-a.id)}
+function matchEvents(matchId,type){return MATCH_EVENTS.filter(e=>String(e.match_id)===String(matchId)&&e.event_type===type)}
+function baselineTotals(label,field){
+  const sid=seasonId(label),out={};
+  MATCH_BASELINES.filter(b=>b.season_id===sid).forEach(b=>out[b.player_name]=(out[b.player_name]||0)+(+b[field]||0));
+  seasonMatches(label).filter(m=>!m.included_in_baseline).forEach(m=>matchEvents(m.id,field==='goals'?'goal':'assist').forEach(e=>out[e.player_name]=(out[e.player_name]||0)+(+e.quantity||1)));
+  return Object.entries(out).filter(x=>x[1]>0).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]))
+}
 function record(ms){let w=0,d=0,l=0;ms.forEach(m=>{if(m.goals_for>m.goals_against)w++;else if(m.goals_for<m.goals_against)l++;else d++});return{w,d,l}}
-function fmtDate(x){if(!x)return'';const d=new Date(x+'T12:00:00');return d.toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'})}
-function renderMatchCentre(){const o=document.getElementById('matchCentre');if(!MATCH_SEASON){o.innerHTML='<div class="ttHead"><span>NWB TEXT</span><span>PAGE 302</span></div><div class="ttSub">NEWCASTLE WANDERERS BLACK<br>MATCH CENTRE</div><div class="seasonGrid"><button class="seasonTile" onclick="openSeason(\'2025/26\')">1&nbsp; 2025/26</button><button class="seasonTile" onclick="openSeason(\'2026/27\')">2&nbsp; 2026/27</button></div><div class="ttSub">SELECT SEASON</div><div class="ttPager">RESULTS • GOALS • ASSISTS</div>';return}renderSeason()}
+function fmtDate(x){if(!x)return'';const d=new Date(x+'T12:00:00');return d.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})}
+function renderMatchCentre(){
+  const o=document.getElementById('matchCentre');
+  if(!MATCH_SEASON){
+    o.innerHTML='<div class="mcHero"><div class="mcEyebrow">Newcastle Wanderers Black</div><div class="mcTitle">Match Centre</div><div class="mcSub">Choose a season to view results, scorers and assists.</div><div class="seasonGrid"><button class="seasonTile" onclick="openSeason(\'2025/26\')"><strong>2025/26</strong><span>Last season</span></button><button class="seasonTile" onclick="openSeason(\'2026/27\')"><strong>2026/27</strong><span>Current season</span></button></div></div>';
+    return
+  }
+  renderSeason()
+}
 function openSeason(s){MATCH_SEASON=s;renderSeason()}
 function closeSeason(){MATCH_SEASON=null;renderMatchCentre()}
-function renderSeason(){const o=document.getElementById('matchCentre'),ms=seasonMatches(MATCH_SEASON),r=record(ms),goals=eventTotals(ms,'goal'),assists=eventTotals(ms,'assist');let h='<div class="ttHead"><span>NWB '+MATCH_SEASON+'</span><span>PAGE '+(MATCH_SEASON==='2025/26'?'303':'304')+'</span></div><div class="ttNav"><button class="ttBack" onclick="closeSeason()">◀ SEASONS</button></div><div class="ttRecord"><div><b>'+r.w+'</b>WON</div><div><b>'+r.d+'</b>DRAWN</div><div><b>'+r.l+'</b>LOST</div></div><div class="ttSub">RESULTS — TAP MATCH FOR DETAILS</div>';
-ms.forEach(m=>{const gs=(m.match_events||[]).filter(e=>e.event_type==='goal'),as=(m.match_events||[]).filter(e=>e.event_type==='assist');h+='<div class="ttResult" onclick="this.classList.toggle(\'open\')"><div class="ttResultTop"><div>'+esc(m.opponent)+'</div><div class="ttScore">'+m.goals_for+'-'+m.goals_against+'</div></div><div class="ttMeta">'+esc(fmtDate(m.match_date))+(m.competition?' • '+esc(m.competition):'')+(m.mom?' • MOM '+esc(m.mom):'')+'</div><div class="ttDetails"><div><span class="ttLabel">GOALS:</span> '+(gs.length?gs.map(e=>esc(e.player_name)+(e.quantity>1?' X'+e.quantity:'')+(e.note?' ('+esc(e.note)+')':'')).join(', '):'—')+'</div><div><span class="ttLabel">ASSISTS:</span> '+(as.length?as.map(e=>esc(e.player_name)+(e.quantity>1?' X'+e.quantity:'')).join(', '):'—')+'</div></div></div>'});
-h+='<div class="ttSub">TOP SCORERS</div><table class="ttTable"><tr><th>#</th><th>PLAYER</th><th>GOALS</th></tr>'+goals.map((x,i)=>'<tr><td>'+(i+1)+'</td><td>'+esc(x[0])+'</td><td>'+x[1]+'</td></tr>').join('')+'</table><div class="ttSub">TOP ASSISTS</div><table class="ttTable"><tr><th>#</th><th>PLAYER</th><th>AST</th></tr>'+assists.map((x,i)=>'<tr><td>'+(i+1)+'</td><td>'+esc(x[0])+'</td><td>'+x[1]+'</td></tr>').join('')+'</table>';
-if(MATCH_SEASON==='2026/27')h+='<div class="ttAdd"><button class="ttBtn green" onclick="toggleAddMatch()">+ ADD MATCH</button><div id="addMatchBox" style="display:none;margin-top:10px"><div class="ttForm"><input id="mfDate" type="date"><input id="mfOpp" placeholder="Opponent"><select id="mfComp"><option>League</option><option>Friendly</option><option>Cup</option><option>Tournament</option></select><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><input id="mfFor" type="number" min="0" placeholder="NWB goals"><input id="mfAgainst" type="number" min="0" placeholder="Opponent goals"></div><input id="mfMom" placeholder="MOM (optional)"><textarea id="mfGoals" placeholder="Goals e.g. Freddie x3, Niall x2, Joey"></textarea><textarea id="mfAssists" placeholder="Assists e.g. Vinny x2, Joey"></textarea><div class="ttHint">Use player name, or player name x2 / x3 etc.</div><button class="ttBtn yellow" onclick="submitMatch()">SAVE RESULT</button><div id="mfStatus"></div></div></div></div>';
-h+='<div class="ttPager">NWB FOOTBALL SERVICE • '+MATCH_SEASON+'</div>';o.innerHTML=h}
-function toggleAddMatch(){const x=document.getElementById('addMatchBox');x.style.display=x.style.display==='none'?'block':'none'}
+function renderSeason(){
+  const o=document.getElementById('matchCentre'),ms=seasonMatches(MATCH_SEASON),r=record(ms),goals=baselineTotals(MATCH_SEASON,'goals'),assists=baselineTotals(MATCH_SEASON,'assists');
+  let h='<div class="mcTopbar"><button class="mcBack" onclick="closeSeason()">← Seasons</button>'+(MATCH_SEASON==='2026/27'?'<button class="mcAddBtn" onclick="toggleAddMatch()">+ Add Match</button>':'')+'</div>';
+  h+='<div class="mcHero"><div class="mcEyebrow">Match Centre</div><div class="mcSeasonTitle"><span>'+MATCH_SEASON+'</span> Season</div><div class="mcSub">'+ms.length+' matches recorded</div><div class="mcRecord"><div><b>'+r.w+'</b><span>WON</span></div><div><b>'+r.d+'</b><span>DRAWN</span></div><div><b>'+r.l+'</b><span>LOST</span></div></div></div>';
+  if(MATCH_SEASON==='2026/27')h+='<div id="addMatchBox" class="mcSection" style="display:none"><div class="mcSectionHead">Add New Match</div><div class="mcFormWrap"><div class="mcForm"><input id="mfDate" type="date"><input id="mfOpp" placeholder="Opponent"><select id="mfComp"><option>League</option><option>Friendly</option><option>Cup</option><option>Tournament</option></select><div class="mcFormRow"><input id="mfFor" type="number" min="0" placeholder="NWB goals"><input id="mfAgainst" type="number" min="0" placeholder="Opponent goals"></div><input id="mfMom" placeholder="MOM (optional)"><textarea id="mfGoals" placeholder="Goals: Freddie x3, Niall x2, Joey"></textarea><textarea id="mfAssists" placeholder="Assists: Vinny x2, Joey"></textarea><div class="mcHint">Use commas between players. Use x2, x3 etc. for multiple goals/assists.</div><button class="mcSave" onclick="submitMatch()">Save Result</button><div id="mfStatus"></div></div></div></div>';
+  h+='<div class="mcSection"><div class="mcSectionHead">Results</div>';
+  if(!ms.length) h+='<div class="mcEmpty">No matches recorded yet.</div>';
+  ms.forEach(m=>{
+    const gs=matchEvents(m.id,'goal'),as=matchEvents(m.id,'assist');
+    h+='<div class="mcResult" onclick="this.classList.toggle(\'open\')"><div class="mcResultTop"><div><div class="mcOpponent">'+esc(m.opponent)+'</div><div class="mcMeta">'+esc(fmtDate(m.match_date))+(m.competition?' • '+esc(m.competition):'')+(m.mom?' • MOM: '+esc(m.mom):'')+'</div></div><div class="mcScore">'+m.goals_for+'–'+m.goals_against+'</div></div><div class="mcDetails"><div><b>Goals:</b> '+(gs.length?gs.map(e=>esc(e.player_name)+(e.quantity>1?' ×'+e.quantity:'')).join(', '):(m.notes?'See match notes':'—'))+'</div><div><b>Assists:</b> '+(as.length?as.map(e=>esc(e.player_name)+(e.quantity>1?' ×'+e.quantity:'')).join(', '):(m.notes?'See match notes':'—'))+'</div>'+(m.notes?'<div class="mcNotes">'+esc(m.notes)+'</div>':'')+'</div></div>'
+  });
+  h+='</div>';
+  h+='<div class="mcSection"><div class="mcSectionHead">Top Scorers</div><table class="mcTable"><tr><th>#</th><th>Player</th><th>Goals</th></tr>'+goals.map((x,i)=>'<tr><td class="mcRank">'+(i+1)+'</td><td><b>'+esc(x[0])+'</b></td><td>'+x[1]+'</td></tr>').join('')+'</table></div>';
+  h+='<div class="mcSection"><div class="mcSectionHead">Top Assists</div><table class="mcTable"><tr><th>#</th><th>Player</th><th>Assists</th></tr>'+assists.map((x,i)=>'<tr><td class="mcRank">'+(i+1)+'</td><td><b>'+esc(x[0])+'</b></td><td>'+x[1]+'</td></tr>').join('')+'</table></div>';
+  o.innerHTML=h
+}
+function toggleAddMatch(){const x=document.getElementById('addMatchBox');if(x)x.style.display=x.style.display==='none'?'block':'none'}
 function parseEvents(text,type){return text.split(',').map(x=>x.trim()).filter(Boolean).map(x=>{const m=x.match(/^(.*?)(?:\s+x(\d+))?$/i);return{event_type:type,player_name:m[1].trim(),quantity:+(m[2]||1)}})}
-async function submitMatch(){const st=document.getElementById('mfStatus');const body={season:'2026/27',match_date:mfDate.value||null,opponent:mfOpp.value.trim(),competition:mfComp.value,goals_for:+mfFor.value,goals_against:+mfAgainst.value,mom:mfMom.value.trim()||null,events:[...parseEvents(mfGoals.value,'goal'),...parseEvents(mfAssists.value,'assist')]};if(!body.opponent||mfFor.value===''||mfAgainst.value===''){st.className='ttError';st.textContent='ENTER OPPONENT AND SCORE';return}st.className='ttStatus';st.textContent='SAVING...';const r=await fetch(API+'?api=addmatch',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});if(!r.ok){st.className='ttError';st.textContent='SAVE FAILED';return}await loadMatches();}
+async function submitMatch(){
+  const st=document.getElementById('mfStatus');
+  const body={season_id:'26-27',match_date:mfDate.value||null,opponent:mfOpp.value.trim(),competition:mfComp.value,goals_for:+mfFor.value,goals_against:+mfAgainst.value,mom:mfMom.value.trim()||null,events:[...parseEvents(mfGoals.value,'goal'),...parseEvents(mfAssists.value,'assist')]};
+  if(!body.opponent||mfFor.value===''||mfAgainst.value===''){st.className='mcError';st.textContent='Enter the opponent and score.';return}
+  st.className='mcStatus';st.textContent='Saving...';
+  const r=await fetch(API+'?api=addmatch',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});
+  if(!r.ok){st.className='mcError';st.textContent='Save failed. Try again.';return}
+  await loadMatches()
+}
 
 pb.onclick=()=>{player.style.display='block';team.style.display='none';match.style.display='none';pb.className='on';tb.className='';mb.className=''};tb.onclick=()=>{player.style.display='none';team.style.display='block';match.style.display='none';pb.className='';tb.className='on';mb.className='';renderTeam()};mb.onclick=()=>{player.style.display='none';team.style.display='none';match.style.display='block';pb.className='';tb.className='';mb.className='on';loadMatches()};load();
 </script></body></html>
