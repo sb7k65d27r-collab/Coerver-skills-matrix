@@ -1,4 +1,4 @@
-<!doctype html><!-- BUILD: TEAM-JOURNEY-LINE-GRAPH-V9 --><!-- BUILD: beast-400-v2 --><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Newcastle Wanderers Black | Coerver Skills Matrix</title><style>
+<!doctype html><!-- BUILD: TRUE-SKILL-LINE-GRAPH-V10 --><!-- BUILD: beast-400-v2 --><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Newcastle Wanderers Black | Coerver Skills Matrix</title><style>
 :root{--y:#ffd400;--p:#151515}*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#080808;color:#fff}header{background:#050505;border-bottom:4px solid var(--y);padding:16px;text-align:center}.club{color:var(--y);font-weight:900;letter-spacing:1.5px;font-size:13px}.title{font-size:24px;font-weight:900;margin:4px}.ball{font-size:28px}main{max-width:850px;margin:auto;padding:14px}.tabs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}.tabs button,.rep,.demo,.cbtn,select{font:inherit;border-radius:10px}.tabs button{padding:12px;border:1px solid var(--y);background:#111;color:var(--y);font-weight:800}.tabs .on{background:var(--y);color:#000}.card{background:var(--p);border:1px solid #303030;border-radius:16px;padding:15px;margin:12px 0}.stats{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}.stat{background:#0b0b0b;border:1px solid #333;border-radius:12px;padding:12px;text-align:center}.stat b{display:block;color:var(--y);font-size:20px}.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.badge{border:1px solid #444;background:#0b0b0b;border-radius:12px;padding:9px 10px;font-size:12px;opacity:.45}.badge.earned{border-color:var(--y);color:#000;background:var(--y);opacity:1;font-weight:800}.challenge{border:2px solid var(--y);background:linear-gradient(180deg,#1a1708,#111)}.challenge h2{margin:0 0 8px;color:var(--y)}.challengeSkill{padding:11px 0;border-bottom:1px solid #333}.challengeTop{display:flex;justify-content:space-between;gap:12px}.challenge-meter,.meter{height:11px;background:#050505;border-radius:99px;overflow:hidden;margin-top:6px}.challenge-bar,.bar{height:100%;background:var(--y)}.cactions{display:flex;gap:7px;margin-top:8px}.cbtn{padding:9px 12px;border:1px solid var(--y);background:#090909;color:var(--y);font-weight:800}.cbtn.reset{border-color:#777;color:#ddd}.complete{background:var(--y);color:#000;font-weight:900;padding:10px;border-radius:10px;text-align:center;margin-top:12px}.category{background:var(--y);color:#000;margin:-15px -15px 7px;padding:13px 15px;border-radius:15px 15px 0 0;font-weight:950;font-size:17px}.catnote,.meta,.hint{font-size:12px;color:#aaa}.row{padding:14px 0;border-bottom:1px solid #333}.skill{font-weight:800}.demo{margin-top:9px;border:1px solid var(--y);background:#0c0c0c;color:var(--y);padding:9px 12px;font-weight:800}.watchbox{margin-top:9px;padding:10px;border:1px solid #444;border-radius:10px;background:#0a0a0a}.watchbox a{color:var(--y);font-weight:800;text-decoration:none}.reps{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}.rep{border:1px solid #555;background:#090909;color:#eee;padding:8px 9px;min-width:42px}.rep.on{background:var(--y);border-color:var(--y);color:#000;font-weight:900}.rep.reset{min-width:62px}select{width:100%;margin-top:8px;padding:12px;background:#080808;color:white;border:1px solid #666}table{width:100%;border-collapse:collapse}td,th{padding:11px 6px;border-bottom:1px solid #333;text-align:left}th,.rank{color:var(--y)}.trophy{font-size:22px}.teamScore{border:2px solid var(--y);background:linear-gradient(180deg,#1c1800,#101010)}.teamTitle{text-align:center;font-weight:900;color:var(--y)}.teamGrid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px}.teamMetric{background:#0b0b0b;border:1px solid #333;border-radius:12px;padding:12px}.teamMetricTop{display:flex;justify-content:space-between;gap:10px;align-items:flex-end}.teamMetric .big{font-size:28px;font-weight:950;color:var(--y)}.teamMetric .target{font-size:13px;color:#bbb}.teamPct{text-align:center;margin-top:12px;font-size:18px;font-weight:900;color:var(--y)}
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.78);display:none;align-items:center;justify-content:center;padding:18px;z-index:9999}.modal.show{display:flex}.talk{width:min(430px,100%);background:linear-gradient(180deg,#1c1800,#0b0b0b);border:2px solid var(--y);border-radius:22px;padding:22px;text-align:center}.talk .icon{font-size:42px}.talk h2{margin:8px 0 6px;color:var(--y);font-size:22px}.talk .playerTalk{font-weight:900;font-size:18px;margin-bottom:12px}.talk .message{font-size:20px;line-height:1.35;font-weight:800}.talk .small{margin-top:12px;color:#bbb;font-size:12px}.talk button{margin-top:18px;width:100%;padding:13px;border:0;border-radius:12px;background:var(--y);color:#000;font-weight:950;font-size:16px}
 .cardMiniWrap{margin-top:12px}.playerCardBtn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;border-radius:12px;border:1px solid #4a4a4a;background:#0b0b0b;color:#fff;font:inherit;text-align:left}.playerCardBtn strong{font-size:14px}.playerCardBtn .miniRating{color:var(--y);font-weight:950}.playerCardBtn .miniHint{font-size:11px;color:#9f9f9f;margin-top:2px}.playerCardBtn .chev{color:var(--y);font-size:18px}
@@ -108,6 +108,20 @@ body.platform-nitro .club,body.platform-nitro .rank,body.platform-nitro th{color
 .jgLine{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 4px rgba(255,255,255,.12))}
 .jgPoint{stroke:#080808;stroke-width:2}.jgName{font-size:8px;font-weight:950}
 .jgChips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.jgChip{padding:5px 8px;border-radius:999px;background:#171717;border:1px solid #303030;color:#aaa;font-size:9px}.jgChip b{color:#fff;margin-left:3px}
+
+.jgThreshold{stroke-width:1.4;stroke-dasharray:7 6;opacity:.65}
+.jgVGrid{stroke:#222;stroke-width:1;opacity:.55}
+.jgLevelLabel{font-size:9px;font-weight:950}
+.jgLevelName{font-size:9px;font-weight:950;letter-spacing:.7px}
+.jgSkillNum{fill:#777;font-size:8px;font-weight:850}
+.jgAxisCaption{text-align:right;color:#666;font-size:8px;font-weight:900;letter-spacing:.8px;margin:5px 5px 0}
+.jgKeys{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:12px}
+.jgPlayerKey{display:grid;grid-template-columns:10px 1fr auto;gap:6px;align-items:center;padding:8px 9px;border:1px solid #333;border-radius:10px;background:#111;color:#aaa;text-align:left;font-size:10px}
+.jgPlayerKey i{width:9px;height:9px;border-radius:50%;background:var(--pc);box-shadow:0 0 9px var(--pc)}
+.jgPlayerKey span{font-weight:900;color:#ddd}.jgPlayerKey b{color:#fff}
+.jgPlayerKey.active{border-color:var(--pc);box-shadow:0 0 14px color-mix(in srgb,var(--pc) 24%,transparent)}
+@media(max-width:520px){.jgKeys{grid-template-columns:repeat(2,1fr)}.journeySvg{min-width:920px}}
+
 </style></head><body><header><div class="ball">⚽</div><div class="club">NEWCASTLE WANDERERS BLACK</div><div class="title">COERVER SKILLS MATRIX</div></header><main><div class="tabs"><button id="pb" class="on">⚽ PLAYER PROGRESS</button><button id="tb">🏆 TEAM PROGRESS</button><button id="mb">📺 MATCH CENTRE</button></div><section id="player"><div class="card"><b style="color:#ffd400">SELECT PLAYER</b><select id="sel"></select><div style="display:flex;justify-content:space-between;margin-top:15px"><span>Overall progress</span><b id="pct" style="color:#ffd400">0%</b></div><div class="meter"><div id="bar" class="bar"></div></div><div id="playerStats"></div></div><div id="challenge" class="card challenge"></div><div id="skills"></div></section><section id="team" style="display:none"><div id="teamScore" class="card teamScore"></div><div class="card"><div class="category">🏆 TEAM PROGRESS</div><div id="teamdata"></div></div>
 <div class="teamJourneyWrap">
 <div class="card"><div class="category">🛣️ TEAM JOURNEY<div class="catnote">EVERY PLAYER • ONE JOURNEY</div></div><div class="journeySwitch"><button id="jr" class="jmode on">LIFETIME REPS</button><button id="js" class="jmode">SKILLS PROGRESSION</button></div><div class="jlegend">🟡 STANDARD　🔵 ELITE　🔴 BEAST　🟣 RAGE　🟢 NITRO</div><div id="journeyBoard"></div></div>
@@ -256,42 +270,78 @@ let JOURNEY_MODE='reps';
 function jstage(pid){const a=S.map(s=>+rep(pid,s.id)||0),m=Math.max(0,...a);return m>=800?'nitro':m>=600?'rage':m>=400?'beast':m>=200?'elite':'standard'}
 function renderJourney(){
   if(!P.length||!S.length)return;
-  const W=900,H=440,L=70,R=24,T=28,B=52,plotW=W-L-R,plotH=H-T-B;
-  const maxX=S.length*1000;
-  const thresholds=[0,200,400,600,800,1000];
-  const labels=['START','ELITE','BEAST','RAGE','NITRO','COMPLETE'];
-  const cols=['#ffd400','#00eaff','#ff1744','#b000ff','#39ff14','#fff'];
-  const players=P.map(p=>{
+  const W=1120,H=520,L=62,R=28,T=28,B=56,plotW=W-L-R,plotH=H-T-B;
+  const maxRep=1000;
+  const thresholds=[
+    {v:0,label:'STANDARD',c:'#ffd400'},
+    {v:200,label:'ELITE',c:'#00eaff'},
+    {v:400,label:'BEAST',c:'#ff1744'},
+    {v:600,label:'RAGE',c:'#b000ff'},
+    {v:800,label:'NITRO',c:'#39ff14'},
+    {v:1000,label:'COMPLETE',c:'#ffffff'}
+  ];
+  const px=i=>L+(i/Math.max(1,S.length-1))*plotW;
+  const py=v=>T+plotH-(Math.min(maxRep,Math.max(0,v))/maxRep)*plotH;
+
+  const players=P.map((p,pi)=>{
     const vals=S.map(s=>Number(rep(p.id,s.id))||0);
     const total=vals.reduce((a,b)=>a+b,0);
-    const stages=[0,200,400,600,800,1000].map(t=>vals.reduce((a,v)=>a+Math.min(v,t),0));
-    return {p,vals,total,stages}
-  });
-  const maxY=Math.max(1000,...players.map(x=>x.total));
-  const x=i=>L+(i/(thresholds.length-1))*plotW;
-  const y=v=>T+plotH-(Math.min(v,maxY)/maxY)*plotH;
-  let svg='<svg class="journeySvg" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Team journey line graph">';
-  // grid + stage labels
+    const hue=(pi*41+18)%360;
+    return {p,vals,total,hue};
+  }).sort((a,b)=>b.total-a.total);
+
+  let svg='<svg class="journeySvg" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="All-player skill progress line graph">';
+
+  // Horizontal level bands/lines
   thresholds.forEach((t,i)=>{
-    svg+='<line x1="'+x(i)+'" y1="'+T+'" x2="'+x(i)+'" y2="'+(T+plotH)+'" class="jgGrid"/>';
-    svg+='<text x="'+x(i)+'" y="'+(H-18)+'" text-anchor="middle" class="jgStage" fill="'+cols[i]+'">'+labels[i]+'</text>';
+    const yy=py(t.v);
+    if(i<thresholds.length-1){
+      const nextY=py(thresholds[i+1].v);
+      svg+='<rect x="'+L+'" y="'+nextY+'" width="'+plotW+'" height="'+(yy-nextY)+'" fill="'+t.c+'" opacity=".035"/>';
+    }
+    svg+='<line x1="'+L+'" y1="'+yy+'" x2="'+(W-R)+'" y2="'+yy+'" class="jgThreshold" style="stroke:'+t.c+'"/>';
+    svg+='<text x="'+(L-8)+'" y="'+(yy+3)+'" text-anchor="end" class="jgLevelLabel" style="fill:'+t.c+'">'+t.v+'</text>';
+    svg+='<text x="'+(W-R-4)+'" y="'+(yy-6)+'" text-anchor="end" class="jgLevelName" style="fill:'+t.c+'">'+t.label+'</text>';
   });
-  [0,.25,.5,.75,1].forEach(q=>{
-    const yy=T+plotH-q*plotH;
-    svg+='<line x1="'+L+'" y1="'+yy+'" x2="'+(W-R)+'" y2="'+yy+'" class="jgGrid h"/>';
-    svg+='<text x="'+(L-8)+'" y="'+(yy+3)+'" text-anchor="end" class="jgAxis">'+Math.round(maxY*q).toLocaleString()+'</text>';
+
+  // Vertical skill guides and sparse x labels.
+  S.forEach((s,i)=>{
+    const xx=px(i);
+    if(i%5===0 || i===S.length-1){
+      svg+='<line x1="'+xx+'" y1="'+T+'" x2="'+xx+'" y2="'+(T+plotH)+'" class="jgVGrid"/>';
+      svg+='<text x="'+xx+'" y="'+(H-22)+'" text-anchor="middle" class="jgSkillNum">'+s.number+'</text>';
+    }
   });
+
+  // Player lines.
   players.forEach((o,pi)=>{
-    const hue=(pi*47)%360;
-    const pts=o.stages.map((v,i)=>x(i)+','+y(v)).join(' ');
-    svg+='<polyline points="'+pts+'" class="jgLine" style="stroke:hsl('+hue+' 90% 62%)"/>';
-    o.stages.forEach((v,i)=>svg+='<circle cx="'+x(i)+'" cy="'+y(v)+'" r="4" style="fill:hsl('+hue+' 90% 62%)" class="jgPoint"/>');
-    const lx=x(5),ly=y(o.stages[5]);
-    svg+='<text x="'+(lx-7)+'" y="'+(ly-8-(pi%3)*5)+'" text-anchor="end" class="jgName" style="fill:hsl('+hue+' 90% 70%)">'+esc(o.p.name)+'</text>';
+    const points=o.vals.map((v,i)=>px(i)+','+py(v)).join(' ');
+    svg+='<polyline points="'+points+'" class="jgLine" style="stroke:hsl('+o.hue+' 88% 62%)"/>';
+    o.vals.forEach((v,i)=>{
+      if(v>0) svg+='<circle cx="'+px(i)+'" cy="'+py(v)+'" r="3.5" class="jgPoint" style="fill:hsl('+o.hue+' 88% 62%)"/>';
+    });
   });
   svg+='</svg>';
-  const cards=players.sort((a,b)=>b.total-a.total).map(o=>'<span class="jgChip">'+esc(o.p.name)+' <b>'+o.total.toLocaleString()+'</b></span>').join('');
-  journeyBoard.innerHTML='<div class="jgTitle">ALL-PLAYER PROGRESS</div><div class="jgSub">Each line shows how far a player has travelled through the skill levels.</div><div class="jgScroll">'+svg+'</div><div class="jgChips">'+cards+'</div>';
+
+  const legend=players.map((o,i)=>
+    '<button class="jgPlayerKey" data-player="'+o.p.id+'" style="--pc:hsl('+o.hue+' 88% 62%)" onclick="highlightJourneyPlayer('+o.p.id+')">'+
+      '<i></i><span>'+esc(o.p.name)+'</span><b>'+o.total.toLocaleString()+'</b>'+
+    '</button>'
+  ).join('');
+
+  journeyBoard.innerHTML=
+    '<div class="jgTitle">PLAYER SKILL JOURNEYS</div>'+
+    '<div class="jgSub">Each line is one player. Skill numbers run left to right; reps run bottom to top. Level thresholds are shown across the graph.</div>'+
+    '<div class="jgScroll">'+svg+'</div>'+
+    '<div class="jgAxisCaption">SKILL NUMBER →</div>'+
+    '<div class="jgKeys">'+legend+'</div>';
+}
+function highlightJourneyPlayer(pid){
+  document.querySelectorAll('.jgPlayerKey').forEach(x=>x.classList.toggle('active',String(x.dataset.player)===String(pid)));
+  const keys=[...document.querySelectorAll('.jgPlayerKey')];
+  const idx=keys.findIndex(x=>String(x.dataset.player)===String(pid));
+  const lines=document.querySelectorAll('.journeySvg .jgLine');
+  lines.forEach((l,i)=>{l.style.opacity=(i===idx?'1':'.12');l.style.strokeWidth=(i===idx?'5':'2.5')});
 }
 jr.onclick=()=>{JOURNEY_MODE='reps';jr.className='jmode on';js.className='jmode';renderJourney()};
 js.onclick=()=>{JOURNEY_MODE='skills';js.className='jmode on';jr.className='jmode';renderJourney()};
